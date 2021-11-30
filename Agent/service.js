@@ -50,5 +50,5 @@ async function handlePollingFromServer() {
 
 
 module.exports = {
-    handlePoolingFromServer,
+    handlePollingFromServer,
 }

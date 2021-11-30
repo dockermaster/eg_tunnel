@@ -10,7 +10,8 @@ const streamNewRequestToAgent = async (req, res) => {
     const isRequestBufferEmpty = !requestsBuffer.length;
 
     if (isRequestBufferEmpty) {
-        return res.send(HTTP_CODE.NO_CONTENT); // no content.
+        return res.sendStatus(HTTP_CODE.NO_CONTENT);
+        //return res.send(HTTP_CODE.NO_CONTENT); // no content.
     }
 
     // pop out the latest request from the store.
